@@ -1,0 +1,22 @@
+name: 'Codeowners automerge'
+description: 'Automerges PRs from code owners that change only owned code'
+author: 'Loris Cro'
+
+branding:
+  icon: git-merge
+  color: orange
+
+inputs:
+  dir:
+    description: 'Path to the directory containing CODEOWNERS'
+    default: '.github/'
+    required: false
+
+  merge_method:
+    description: "The merge strategy to use: 'merge', 'squash' or 'rebase'"
+    default: 'merge'
+    required: false
+    
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

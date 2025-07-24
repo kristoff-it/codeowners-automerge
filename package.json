@@ -1,0 +1,26 @@
+{
+  "name": "codeowners-automerge",
+  "version": "0.1.0",
+  "description": "Automerges PRs from code owners that only change owned code",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dist": "bun build --target=node --minify --sourcemap=linked --production --outdir=dist src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristoff-it/codeowners-automerge.git"
+  },
+  "author": "Loris Cro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kristoff-it/codeowners-automerge/issues"
+  },
+  "homepage": "https://github.com/kristoff-it/codeowners-automerge#readme",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.1",
+    "ignore": "^7.0.5",
+    "source-map-support": "^0.5.21"
+  }
+}
